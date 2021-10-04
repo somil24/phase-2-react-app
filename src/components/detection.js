@@ -4,8 +4,12 @@ import {Link} from 'react-router-dom';
 import axios from 'axios'
 import VideoPreview from '@think42labs/video-preview';
 
+//Socket io test 
+import FaceDetection from "../Socket-io-Test/FaceDetection"
+
 function NewFace() {
-    const [video, setVideo] = useState()
+
+   { /* const [video, setVideo] = useState()
    
   
     async function uploadFile() {
@@ -66,11 +70,20 @@ function NewFace() {
                     controls={true}
                     autoPlay={true}
                     id="file1"
-          />*/}
+          />}
           </React.Fragment>
         </form>
       </div>
     )
+        */}
+
+        return(
+          <div style={{display:"flex",justifyItems:"center",alignItems:"center"}}>
+            <FaceDetection/>
+          </div>
+          
+        )
+
   }
   
   export default NewFace
