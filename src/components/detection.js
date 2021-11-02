@@ -1,15 +1,15 @@
-import React,{ useState } from 'react'
-import TextField from '@material-ui/core/TextField';
-import {Link} from 'react-router-dom';
-import axios from 'axios'
-import VideoPreview from '@think42labs/video-preview';
+import React, { useState } from "react";
+import TextField from "@material-ui/core/TextField";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import VideoPreview from "@think42labs/video-preview";
 
-//Socket io test 
-import FaceDetection from "../Socket-io-Test/FaceDetection"
+//Socket io test
+import FaceDetection from "../Socket-io-Test/FaceDetection/FaceDetection";
 
 function NewFace() {
-
-   { /* const [video, setVideo] = useState()
+  {
+    /* const [video, setVideo] = useState()
    
   
     async function uploadFile() {
@@ -75,16 +75,16 @@ function NewFace() {
         </form>
       </div>
     )
-        */}
-
-        return(
-          <div style={{display:"flex",justifyItems:"center",alignItems:"center"}}>
-            <FaceDetection/>
-          </div>
-          
-        )
-
+        */
   }
-  
-  export default NewFace
-  
+
+  return (
+    <div
+      style={{ display: "flex", justifyItems: "center", alignItems: "center" }}
+    >
+      <FaceDetection />
+    </div>
+  );
+}
+
+export default NewFace;
